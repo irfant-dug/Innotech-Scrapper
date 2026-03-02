@@ -150,8 +150,11 @@ def main():
             logout(driver)
 
         #save scrap result to json file
+        #use epoch time for time passed calculation
+        query_dict = {'epoch_time': str(time.time())}         
+        query_dict['tank'] = tank_dict
         with open('tank_metric.json', 'w') as tank_metric:
-            json.dump(tank_dict, tank_metric)
+            json.dump(query_dict, tank_metric)
 
         print("innotechscrapper great success")
         driver.quit()
