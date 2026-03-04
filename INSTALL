@@ -13,7 +13,7 @@ python3 -m venv /opt/innotech_scraper/selenium-env
 mkdir -p /opt/innotech_scraper/chrome
 wget -P /opt/innotech_scraper/chrome https://storage.googleapis.com/chrome-for-testing-public/146.0.7680.31/linux64/chrome-linux64.zip && \
 unzip /opt/innotech_scraper/chrome/chrome-linux64.zip
-wget -P /opt/innotech_scraper/chrome https://storage.googleapis.com/chrome-for-testing-public/146.0.7680.31/linux64/chrome-linux64.zip && \
+wget -P /opt/innotech_scraper/chrome https://storage.googleapis.com/chrome-for-testing-public/146.0.7680.31/linux64/chromedriver-linux64.zip && \
 unzip /opt/innotech_scraper/chrome/chromedriver-linux64.zip
 
 chown innotech_scraper:innotech_scraper /opt/innotech_scraper -R
