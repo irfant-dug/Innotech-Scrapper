@@ -1,0 +1,2 @@
+cp dotenv /opt/innotech_scraper/.env
+chown innotech_scraper:innotech_scraper .env
