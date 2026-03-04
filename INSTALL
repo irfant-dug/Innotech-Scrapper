@@ -4,6 +4,7 @@ mkdir -p /opt/innotech_scraper
 
 install -o innotech_scraper -g innotech_scraper innotechscraper.py /opt/innotech_scraper/
 install -o innotech_scraper -g innotech_scraper innotechscraper_api.py /opt/innotech_scraper/
+install -o innotech_scraper -g innotech_scraper dotenv /opt/innotech_scraper/.env
 install -o root -g root systemd/innotech_scraper_api.service /etc/systemd/system/
 install -o root -g root systemd/innotech_scraper.timer /etc/systemd/system/
 install -o root -g root systemd/innotech_scraper.service /etc/systemd/system/
