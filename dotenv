@@ -1,5 +1,5 @@
-CHROMEDRIVER_LOCATION=./chromedriver
-CHROMEBINARY_LOCATION=./chrome-linux64/chrome
+CHROMEDRIVER_LOCATION=./chrome/chromedriver-linux64/chromedriver
+CHROMEBINARY_LOCATION=./chrome/chrome-linux64/chrome
 MONITORING_SITES=kmon0006,kmon0007
 kmon0006_CREDENTIALS=username,password
 kmon0007_CREDENTIALS=username,password

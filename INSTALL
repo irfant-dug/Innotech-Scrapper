@@ -12,9 +12,9 @@ install -o root -g root systemd/innotech_scraper.service /etc/systemd/system/
 python3 -m venv /opt/innotech_scraper/selenium-env
 mkdir -p /opt/innotech_scraper/chrome
 wget -P /opt/innotech_scraper/chrome https://storage.googleapis.com/chrome-for-testing-public/146.0.7680.31/linux64/chrome-linux64.zip && \
-unzip -o /opt/innotech_scraper/chrome/chrome-linux64.zip -d /opt/innotech_scraper/chrome/chrome-linux64/
+unzip -o /opt/innotech_scraper/chrome/chrome-linux64.zip -d /opt/innotech_scraper/chrome/
 wget -P /opt/innotech_scraper/chrome https://storage.googleapis.com/chrome-for-testing-public/146.0.7680.31/linux64/chromedriver-linux64.zip && \
-unzip -o /opt/innotech_scraper/chrome/chromedriver-linux64.zip -d /opt/innotech_scraper/chrome/chromedriver-linux64 
+unzip -o /opt/innotech_scraper/chrome/chromedriver-linux64.zip -d /opt/innotech_scraper/chrome/
 
 chown innotech_scraper:innotech_scraper /opt/innotech_scraper -R
 su - innotech_scraper -c "restorecon -Rv /opt/innotech_scraper" 
