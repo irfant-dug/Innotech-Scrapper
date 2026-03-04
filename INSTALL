@@ -17,6 +17,4 @@ wget -P /opt/innotech_scraper/chrome https://storage.googleapis.com/chrome-for-t
 unzip -o /opt/innotech_scraper/chrome/chromedriver-linux64.zip -d /opt/innotech_scraper/chrome/chromedriver-linux64 
 
 chown innotech_scraper:innotech_scraper /opt/innotech_scraper -R
-su - innotech_scraper && restorecon -Rv /opt/innotech_scraper
-exit
-cd
+su - innotech_scraper -c "restorecon -Rv /opt/innotech_scraper" 
