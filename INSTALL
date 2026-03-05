@@ -1,4 +1,4 @@
-dnf install google-chrome -y
+dnf install google-chrome-stable -y
 useradd innotech_scraper
 mkdir -p /opt/innotech_scraper
 
