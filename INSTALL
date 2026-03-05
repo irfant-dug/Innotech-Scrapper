@@ -20,4 +20,5 @@ rm -f /opt/innotech_scraper/chrome/chromedriver-linux64.zip
 
 chown innotech_scraper:innotech_scraper /opt/innotech_scraper -R
 su - innotech_scraper -c "restorecon -Rv /opt/innotech_scraper" 
+/opt/innotech_scraper/selenium-env/bin/python -m pip install --upgrade pip
 /opt/innotech_scraper/selenium-env/bin/python -m pip install selenium python-dotenv beautifulsoup4 fastapi[standard]
