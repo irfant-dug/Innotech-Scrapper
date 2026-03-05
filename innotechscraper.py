@@ -100,10 +100,8 @@ def scrap_tank_page(html):
             value = row.find("div", class_="watch-value el-col el-col-8").get_text()
             chwv.append((value.split())[0])
 
-    for i in tank_name:
-        count = 0
+    for count, i in enumerate(tank_name):
         tank_dict[i] = {"temp": temp[count], "chwv": chwv[count]}
-        count += 1
 
 def main():
     #location of chromedriver
