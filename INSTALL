@@ -1,4 +1,7 @@
-dnf install google-chrome-stable python3.9 -y
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+dnf install google-chrome-stable_current_x86_64.rpm -y
+rm -f google-chrome-stable_current_x86_64.rpm
+dnf install python3.9 -y
 useradd innotech_scraper
 mkdir -p /opt/innotech_scraper
 
